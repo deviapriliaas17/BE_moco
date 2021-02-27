@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 3</title>
+</head>
+
+<body>
+    <h1 name="header_1">HELLO, WELCOME</h1>
+    <h2 class="header_2">HELLO, WELCOME BACK</h1>
+        <p id="add_header_2"></p>
+        <script type="text/javascript">
+            var x = document.getElementsByClassName("header_2");
+            var data = [].map.call(x, item => item.textContent);
+            var value_p = document.getElementById("add_header_2");
+            value_p.innerHTML = "Add By JS with InnerHTML |" + data;
+            alert(data);
+        </script>
+</body>
+
+</html>
